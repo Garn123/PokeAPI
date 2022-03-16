@@ -1,0 +1,21 @@
+@import "./_variables";
+
+// @include tablet {
+//   background-color: red;
+// }
+
+@mixin tablet {
+  @media screen and (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+// @include desktop {
+//   background-color: blue;
+// }
+
+@mixin desktop {
+  @media screen and (min-width: #{$desktop}) {
+    @content;
+  }
+}

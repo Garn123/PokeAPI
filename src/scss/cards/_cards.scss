@@ -1,0 +1,121 @@
+body {
+    background-color: #bfbfbf;
+    background-image: url(../assets/cutcube.png);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 70%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffcc01;
+    border: 10px solid #3264af;
+    border-radius: 20px;
+    margin: 15px;
+    width: 295px;
+    height: 570px;
+    transition: 1s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+        &:active{
+            transform:rotateY(180deg);
+        }
+}
+
+.container img {
+    width: 100%;
+    max-height: 250px;
+}
+
+.back {
+    background: url(../assets/garny_jejejejejeje.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.name {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+    text-transform: uppercase;
+}
+
+p {
+    padding: 2px;
+    font-weight: bold;
+}
+
+.order {
+    font-weight: bold;
+    color: #3264af;
+}
+
+.order span {
+    color: black;
+}
+
+.type {
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #3264af;
+        span {
+            color: #000000;
+            font-size: 25px;
+        }
+}
+
+.height {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.weight {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    font-size: 25px;
+}

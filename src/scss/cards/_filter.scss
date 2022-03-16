@@ -1,0 +1,37 @@
+.filter {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .input-text {
+            margin: 40px;
+            width: 500px;
+            height: 35px;
+            border-radius: 10px;
+            border-bottom: 2px solid #3264af;
+            border-right: 2px solid #3264af;
+            border-top: 2px solid #ffcc01;
+            border-left: 2px solid #ffcc01;
+            transition: .5s;
+            padding-left: 10px;
+            font-size: 20px;
+                &::placeholder{
+                    padding-left:20px ;
+                    font-size: 25px;
+                }
+                &:focus {
+                    border-bottom: 2px solid #ffcc01;
+                    border-right: 2px solid #ffcc01;
+                    border-top: 2px solid #3264af;
+                    border-left: 2px solid #3264af;
+                    outline: none;
+                    padding-left: 40px;
+                    font-size: 25px;
+                    font-weight: bold;
+
+                        &::placeholder {
+                            opacity: 0;
+                        }
+                }
+        }
+}
